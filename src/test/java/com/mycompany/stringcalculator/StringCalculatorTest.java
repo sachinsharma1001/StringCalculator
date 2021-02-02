@@ -26,10 +26,10 @@ public class StringCalculatorTest {
   @DisplayName("Add Numbers")
   public void addNumbersWithEmptyString() {
     testReporter.publishEntry("Running " + testInfo.getDisplayName());
-    String numbers = "";
+    String numbers = "1,2";
     StringCalculator calculator = new StringCalculator();
     int sum = calculator.add(numbers);
-    assertEquals(0, sum, "When string is empty sum is 0");
+    assertEquals(3, sum, "Test runs successfully by adding 2 numbers");
   }
 
 }
